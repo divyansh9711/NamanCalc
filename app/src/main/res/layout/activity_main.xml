@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image"
+    android:background="@drawable/asdf3"
     tools:context="com.example.divyanshsingh.namancalc.MainActivity">
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"
+            android:background="#20000000"
+            android:textSize="20dp"
+
             android:layout_above="@+id/button0"
             android:layout_alignParentStart="true" />
 
@@ -18,6 +21,10 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:text="2"
             android:layout_alignBaseline="@+id/button1"
             android:layout_alignBottom="@+id/button1"
@@ -27,6 +34,10 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:text="3"
             android:layout_above="@+id/buttonLeftBracket"
             android:layout_toEndOf="@+id/button2" />
@@ -34,6 +45,10 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:text="4"
             android:layout_above="@+id/button1"
@@ -42,6 +57,10 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:text="5"
             android:layout_alignBaseline="@+id/button4"
@@ -52,6 +71,10 @@
             android:id="@+id/button6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:text="6"
             android:layout_above="@+id/button3"
             android:layout_toEndOf="@+id/button2" />
@@ -59,6 +82,10 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:text="7"
             android:layout_above="@+id/button4"
@@ -67,6 +94,10 @@
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:text="8"
             android:layout_above="@+id/button5"
@@ -75,6 +106,10 @@
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/button8"
             android:layout_alignEnd="@+id/button6"
@@ -83,6 +118,10 @@
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="20dp"
+
+
             android:layout_height="wrap_content"
             android:text="0"
             android:layout_alignParentBottom="true"
@@ -91,8 +130,12 @@
         <Button
             android:id="@+id/buttonSubtract"
             android:layout_width="wrap_content"
+            android:background="#20000000"
+            android:textSize="30dp"
+
+
             android:layout_height="wrap_content"
-            android:text="subtract"
+            android:text="-"
             android:layout_above="@+id/buttonMultiply"
             android:layout_alignParentEnd="true"
             android:layout_toEndOf="@+id/button9" />
@@ -101,7 +144,11 @@
             android:id="@+id/buttonAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ADD"
+            android:text="+"
+            android:background="#20000000"
+            android:textSize="30dp"
+
+
             android:layout_alignBaseline="@+id/buttonLeftBracket"
             android:layout_alignBottom="@+id/buttonLeftBracket"
             android:layout_alignParentEnd="true"
@@ -111,8 +158,12 @@
             android:id="@+id/buttonMultiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Multiply"
+            android:text="*"
             android:layout_above="@+id/buttonDivide"
+            android:background="#20000000"
+            android:textSize="30dp"
+
+
             android:layout_alignParentEnd="true"
             android:layout_toEndOf="@+id/button3" />
 
@@ -120,8 +171,10 @@
             android:id="@+id/buttonDivide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Divide"
+            android:text="/"
             android:layout_alignBaseline="@+id/button3"
+            android:background="#20000000"
+            android:textSize="30dp"
             android:layout_alignBottom="@+id/button3"
             android:layout_alignParentEnd="true"
             android:layout_toEndOf="@+id/button3" />
@@ -130,21 +183,26 @@
             android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/button7"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/buttonCalc"
+            android:layout_toStartOf="@+id/buttonCalc"
+            android:background="#50000000"
             android:ems="10"
             android:inputType="numberSigned"
-            android:layout_alignBottom="@+id/buttonCalc"
-            android:layout_alignParentStart="true"
-            android:textSize="40dp"
-            android:textColor="@android:color/holo_green_light"
-            android:background="@android:color/white"
-            android:layout_toStartOf="@+id/buttonCalc" />
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="35dp" />
 
         <Button
             android:id="@+id/buttonCalc"
             android:layout_width="wrap_content"
+            android:textSize="20dp"
+
             android:layout_height="wrap_content"
             android:text="CALC."
             android:layout_centerVertical="true"
+            android:background="#20000000"
+
             android:layout_alignParentEnd="true"
             android:layout_alignStart="@+id/buttonClear" />
 
@@ -152,15 +210,23 @@
             android:id="@+id/buttonRightBracket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
+
             android:text="("
             android:layout_alignBaseline="@+id/button0"
+            android:background="#20000000"
+
             android:layout_alignBottom="@+id/button0"
             android:layout_toEndOf="@+id/button0" />
 
         <Button
             android:id="@+id/buttonLeftBracket"
             android:layout_width="wrap_content"
+            android:textSize="20dp"
+
             android:layout_height="wrap_content"
+            android:background="#20000000"
+
             android:text=")"
             android:layout_alignBaseline="@+id/buttonRightBracket"
             android:layout_alignBottom="@+id/buttonRightBracket"
@@ -168,7 +234,11 @@
 
         <Button
             android:id="@+id/buttonClear"
+            android:textSize="20dp"
+
             android:layout_width="wrap_content"
+            android:background="#20000000"
+
             android:layout_height="wrap_content"
             android:layout_above="@+id/buttonSubtract"
             android:layout_alignParentEnd="true"

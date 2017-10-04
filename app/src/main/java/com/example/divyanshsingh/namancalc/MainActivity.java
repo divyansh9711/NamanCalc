@@ -39,7 +39,7 @@ int a = 0;
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 1");
+                Display.setText(s + "1");
                 a = 1;
             }
         });
@@ -55,70 +55,70 @@ int a = 0;
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 0");
+                Display.setText(s + "0");
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 2");
+                Display.setText(s + "2");
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 3");
+                Display.setText(s + "3");
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 4");
+                Display.setText(s + "4");
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 5");
+                Display.setText(s + "5");
             }
         });
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 6");
+                Display.setText(s + "6");
             }
         });
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 7");
+                Display.setText(s + "7");
             }
         });
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 8");
+                Display.setText(s + "8");
             }
         });
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " 9");
+                Display.setText(s + "9");
             }
         });
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String s = Display.getText().toString();
-                Display.setText(s + " +");
+                Display.setText(s + "+");
             }
         });
         calc.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +129,11 @@ int a = 0;
                 InToPos temp1 = new InToPos(s);
                 String a = temp1.doTrans();
                 evalPostfix temp2 = new evalPostfix(a);
-                float result = temp2.calc();
+                int kol = temp1.arr.get(0),jko = temp1.arr.get(1);
+                double result = temp2.calc(temp1.arr,temp1.k);
+                if(result == 3.14)
+                    Display.setText("INVALID");
+                else
                 Display.setText(String.valueOf(result));
 
             }

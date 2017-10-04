@@ -6,24 +6,24 @@ package com.example.divyanshsingh.namancalc;
 
 public class MyStack {
     private int maxSize;
-    private float[] stackArray;
-    private int top;
+    private double[] stackArray;
+    public int top;
 
 
     public MyStack(int max) {
         maxSize = max;
-        stackArray = new float[maxSize];
+        stackArray = new double[maxSize];
         top = -1;
     }
-    public void push(float j)
+    public void push(double j)
     {
         stackArray[++top] = j;
     }
-    public float pop() {
+    public double pop() {
 
         return stackArray[top--];
     }
-    public float peek()
+    public double peek()
     {
         return stackArray[top];
     }
